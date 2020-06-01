@@ -1,0 +1,38 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+
+<?import javafx.scene.layout.VBox?>
+<VBox fx:controller="sample.Controller"
+      xmlns:fx="http://javafx.com/fxml" alignment="CENTER" >
+
+    <TextArea fx:id="textArea" editable="false"/>
+
+    <GridPane hgap="10" vgap="10" >
+        <Button fx:id="button1" onAction="#btn1Click" text="1" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+        <Button fx:id="button2" onAction="#btn2Click" text="2" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+        <Button fx:id="button3" onAction="#btn3Click" text="3" GridPane.rowIndex="0" GridPane.columnIndex="2"/>
+
+        <Button fx:id="button4" onAction="#btn4Click" text="4" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <Button fx:id="button5" onAction="#btn5Click" text="5" GridPane.rowIndex="1" GridPane.columnIndex="1" />
+        <Button fx:id="button6" onAction="#btn6Click" text="6" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+
+        <Button fx:id="button7" onAction="#btn7Click" text="7" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+        <Button fx:id="button8" onAction="#btn8Click" text="8" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+        <Button fx:id="button9" onAction="#btn9Click" text="9" GridPane.rowIndex="2" GridPane.columnIndex="2" />
+
+
+        <Button fx:id="buttonPlus" onAction="#btnPlusClick" text="+" GridPane.rowIndex="0" GridPane.columnIndex="3" />
+        <Button fx:id="buttonMinus" onAction="#btnMinusClick" text="-" GridPane.rowIndex="1" GridPane.columnIndex="3"/>
+        <Button fx:id="buttonMultiply" onAction="#btnMultiplyClick" text="*" GridPane.rowIndex="2" GridPane.columnIndex="3"/>
+        <Button fx:id="buttonDivide" onAction="#btnDivideClick" text="/" GridPane.rowIndex="3" GridPane.columnIndex="3" />
+        <Button fx:id="buttonResult" onAction="#btnResultClick" text="=" GridPane.rowIndex="3" GridPane.columnIndex="2"/>
+        <Button fx:id="buttonClean" onAction="#btnClean" text="Clean" GridPane.rowIndex="4" GridPane.columnIndex="3"/>
+
+    </GridPane>
+
+</VBox>
